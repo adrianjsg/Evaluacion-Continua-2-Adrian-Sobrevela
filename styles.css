@@ -1,0 +1,117 @@
+/* Colores */
+:root {
+    --color-head:  #A0153E;
+    --color-body-bg: #FF204E;
+    --color-card: #5D0E41;
+    --color-footer: #00224D;
+}
+
+.logo {
+    width: 30px; /* Ajusta el tamaño del logo*/
+    height: auto; /* Para mantener la proporción*/
+    margin-right: 5px; /* Espacio entre el logo y el texto "Inicio" */
+    
+}
+
+.centrar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto hace que el contenedor ocupe toda la altura de la ventana */
+}
+
+.logo-principal {
+    max-width: 100%; /* Para asegurarse de que el logo no se desborde del contenedor */
+    max-height: 100%; /* Para asegurarse de que el logo no se desborde del contenedor */
+}
+
+
+
+/* Estilos generales */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--color-head);
+}
+
+
+body {
+    background-color: var(--color-body-bg);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: var(--color-head);
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    background-color: var(--color-card);
+    color: white;
+    padding: 20px;
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* Estilos para la página en construcción */
+.pagina-en-construccion {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pagina-en-construccion h2 {
+    color: #FF204E;
+}
+
+.pagina-en-construccion p {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el botón de volver a inicio */
+.boton-volver {
+    display: inline-block;
+    background-color: #A0153E;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+    background-color: #FF204E;
+}
+
+
+footer {
+    background-color: var(--color-footer);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

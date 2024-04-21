@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Rutina - SuperFit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="logo_boton.png" alt="Logo" class="logo">
+                        Inicio
+                    </a>
+                </li>
+                <li><a href="crear_rutina.html">Crea tu rutina</a></li>
+                <li><a href="objetivos.html">Objetivos Entrenamiento</a></li>
+                <li><a href="seguimiento.html">Seguimiento proceso de entrenamiento</a></li>
+                <li><a href="ejercicios.html">Información Ejercicios</a></li>
+                <li><a href="control_entrenamiento.html">Control de entrenamiento</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="card">
+        <div class="container">
+            <h2>Crear Rutina</h2>
+            <form id="rutinaForm">
+                <label for="ejercicios">Seleccionar Ejercicios:</label><br>
+                <select id="ejercicios">
+                    <option value="1">Flexiones</option>
+                    <option value="2">Sentadillas</option>
+                    <option value="3">Plancha</option>
+                    <option value="4">Jalón al pecho</option> 
+                    <option value="5">Curl de bíceps</option> 
+                    <option value="6">Extensiones de tríceps</option> 
+                    <!-- Agrega más opciones según tu lista predefinida -->
+                </select>
+                <button type="button" onclick="agregarEjercicio()">Agregar Ejercicio</button>
+                <br><br>
+                <ul id="listaEjercicios"></ul>
+                <button type="button" onclick="guardarRutina()">Guardar Rutina</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="tarjeta-flotante" id="tarjetaFlotante" style="display: none;">
+        <div class="tarjeta-contenido">
+            <span class="cerrar" onclick="cerrarTarjeta()">&times;</span>
+            <h2>Rutina Guardada</h2>
+            <ul id="rutinaGuardada"></ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>SuperFit © 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript -->
+</body>
+</html>
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Progreso - SuperFit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="logo_boton.png" alt="Logo" class="logo">
+                        Inicio
+                    </a>
+                </li>
+                <li><a href="crear_rutina.html">Crea tu rutina</a></li>
+                <li><a href="objetivos.html">Objetivos Entrenamiento</a></li>
+                <li><a href="seguimiento.html">Seguimiento proceso de entrenamiento</a></li>
+                <li><a href="ejercicios.html">Información Ejercicios</a></li>
+                <li><a href="control_entrenamiento.html">Control de entrenamiento</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="card">
+        <div class="container">
+            <h2>Seguimiento de Progreso</h2>
+            <form id="progresoForm">
+                <label for="duracion">Duración del Entrenamiento (minutos):</label><br>
+                <input type="number" id="duracion" min="1" required>
+                <br><br>
+                <label for="intensidad">Intensidad del Entrenamiento (de 1 a 10):</label><br>
+                <input type="number" id="intensidad" min="1" max="10" required>
+                <br><br>
+                <label for="rendimiento">Rendimiento del Entrenamiento:</label><br>
+                <input type="text" id="rendimiento" required>
+                <br><br>
+                <button type="button" onclick="guardarProgreso()">Guardar Progreso</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="tarjeta-flotante" id="tarjetaFlotante" style="display: none;">
+        <div class="tarjeta-contenido">
+            <span class="cerrar" onclick="cerrarTarjeta()">&times;</span>
+            <h2>Progreso Guardado</h2>
+            <p>Duración del Entrenamiento: <span id="duracionProgreso"></span> minutos</p>
+            <p>Intensidad del Entrenamiento: <span id="intensidadProgreso"></span></p>
+            <p>Rendimiento del Entrenamiento: <span id="rendimientoProgreso"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>SuperFit © 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript -->
+</body>
+</html>
+

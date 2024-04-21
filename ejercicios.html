@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Ejercicios - SuperFit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="logo_boton.png" alt="Logo" class="logo">
+                        Inicio
+                    </a>
+                </li>
+                <li><a href="crear_rutina.html">Crea tu rutina</a></li>
+                <li><a href="objetivos.html">Objetivos Entrenamiento</a></li>
+                <li><a href="seguimiento.html">Seguimiento proceso de entrenamiento</a></li>
+                <li><a href="ejercicios.html">Información Ejercicios</a></li>
+                <li><a href="control_entrenamiento.html">Control de entrenamiento</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h2>Información de Ejercicios</h2>
+        <label for="ejercicios">Seleccionar Ejercicio:</label><br>
+        <select id="ejercicios" onchange="mostrarInformacion()">
+            <option value="flexiones">Flexiones</option>
+            <option value="sentadillas">Sentadillas</option>
+            <option value="plancha">Plancha</option>
+            <option value="jalon">Jalón al pecho</option>
+            <option value="biceps">Curl Bíceps</option>
+            <option value="triceps">Extensiones de Tríceps</option>
+            <!-- Agrega más opciones -->
+        </select>
+        <div id="informacionEjercicio">
+            <h3 id="nombreEjercicio">Flexiones</h3>
+            <p id="instrucciones">Las flexiones son un ejercicio básico de fuerza en el que se trabajan principalmente los músculos del pecho, hombros y tríceps. Para realizar una flexión, acuéstate boca abajo, coloca las manos a la altura de los hombros y empuja el cuerpo hacia arriba manteniendo el abdomen contraído.</p>
+            <p id="musculosTrabajados">Músculos trabajados: Pectorales, deltoides, tríceps.</p>
+            <p id="equipoNecesario">Equipo necesario: Ninguno.</p>
+            <div id="videoEjercicio">
+                <!-- Insertar video explicativo si se desea -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>SuperFit © 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript -->
+</body>
+</html>
+
+
+

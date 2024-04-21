@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Entrenamiento - SuperFit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="logo_boton.png" alt="Logo" class="logo">
+                        Inicio
+                    </a>
+                </li>
+                <li><a href="crear_rutina.html">Crea tu rutina</a></li>
+                <li><a href="objetivos.html">Objetivos Entrenamiento</a></li>
+                <li><a href="seguimiento.html">Seguimiento proceso de entrenamiento</a></li>
+                <li><a href="ejercicios.html">Información Ejercicios</a></li>
+                <li><a href="control_entrenamiento.html">Control de entrenamiento</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="acerca.html">Acerca</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="card">
+        <div class="container">
+            <h2>Control de Entrenamiento</h2>
+            <div id="sesionInfo">
+                <label for="intensidad">Intensidad:</label>
+                <input type="range" id="intensidad" min="1" max="10" value="5"><br>
+                <label for="peso">Peso (kg):</label>
+                <input type="number" id="peso" min="0"><br>
+                <label for="repeticiones">Repeticiones:</label>
+                <input type="number" id="repeticiones" min="1"><br>
+                <label for="series">Series:</label>
+                <input type="number" id="series" min="1"><br><br>
+                <button id="startButton" onclick="iniciarSesion()">Iniciar Sesión</button>
+                <button id="pauseButton" onclick="pausarSesion()" disabled>Pausar Sesión</button>
+                <button id="stopButton" onclick="detenerSesion()" disabled>Detener Sesión</button>
+            </div>
+            <div id="cronometro">
+                <p>Sesión: <span id="numeroSesion">1</span></p> <!-- Mostrar el número de sesión actual -->
+                <p>Tiempo transcurrido: <span id="tiempo">00:00:00</span></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>SuperFit © 2024. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript -->
+</body>
+</html>
+
+
+
