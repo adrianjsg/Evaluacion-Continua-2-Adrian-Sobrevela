@@ -10,7 +10,6 @@
     width: 30px; /* Ajusta el tamaño del logo*/
     height: auto; /* Para mantener la proporción*/
     margin-right: 5px; /* Espacio entre el logo y el texto "Inicio" */
-    
 }
 
 .centrar-logo {
@@ -25,8 +24,6 @@
     max-height: 100%; /* Para asegurarse de que el logo no se desborde del contenedor */
 }
 
-
-
 /* Estilos generales */
 .header {
     display: flex;
@@ -35,7 +32,6 @@
     padding: 10px;
     background-color: var(--color-head);
 }
-
 
 body {
     background-color: var(--color-body-bg);
@@ -74,22 +70,6 @@ nav ul li a {
     border-radius: 10px;
 }
 
-/* Estilos para la página en construcción */
-.pagina-en-construccion {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.pagina-en-construccion h2 {
-    color: #FF204E;
-}
-
-.pagina-en-construccion p {
-    color: #333;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
 /* Estilos para el botón de volver a inicio */
 .boton-volver {
     display: inline-block;
@@ -105,7 +85,6 @@ nav ul li a {
     background-color: #FF204E;
 }
 
-
 footer {
     background-color: var(--color-footer);
     color: white;
@@ -115,3 +94,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+

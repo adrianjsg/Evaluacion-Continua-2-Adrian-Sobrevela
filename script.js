@@ -218,6 +218,35 @@ function mostrarInformacion() {
     document.getElementById("equipoNecesario").textContent = equipoNecesario;
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Obtener todos los elementos de enlace del menú
+    var menuLinks = document.querySelectorAll("nav ul li a");
+
+    // Añadir evento de teclado a cada enlace del menú
+    menuLinks.forEach(function(link, index) {
+        link.addEventListener("keydown", function(event) {
+            var prevIndex = (index === 0) ? menuLinks.length - 1 : index - 1;
+            var nextIndex = (index === menuLinks.length - 1) ? 0 : index + 1;
+
+            switch (event.key) {
+                case "ArrowUp":
+                    // Navegar al enlace anterior
+                    menuLinks[prevIndex].focus();
+                    event.preventDefault(); // Evitar que el navegador haga scroll
+                    break;
+                case "ArrowDown":
+                    // Navegar al enlace siguiente
+                    menuLinks[nextIndex].focus();
+                    event.preventDefault(); // Evitar que el navegador haga scroll
+                    break;
+            }
+        });
+    });
+});
+
+
+
+
 
 
 

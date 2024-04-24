@@ -16,6 +16,7 @@
                         Inicio
                     </a>
                 </li>
+                <!-- Agrega etiquetas <label> para mejorar la accesibilidad -->
                 <li><a href="crear_rutina.html">Crea tu rutina</a></li>
                 <li><a href="objetivos.html">Objetivos Entrenamiento</a></li>
                 <li><a href="seguimiento.html">Seguimiento proceso de entrenamiento</a></li>
@@ -30,7 +31,8 @@
     <div class="container">
         <h2>Información de Ejercicios</h2>
         <label for="ejercicios">Seleccionar Ejercicio:</label><br>
-        <select id="ejercicios" onchange="mostrarInformacion()">
+        <!-- Mejora la accesibilidad con etiquetas aria-* -->
+        <select id="ejercicios" onchange="mostrarInformacion()" aria-label="Seleccionar ejercicio" aria-describedby="instrucciones musculosTrabajados equipoNecesario">
             <option value="flexiones">Flexiones</option>
             <option value="sentadillas">Sentadillas</option>
             <option value="plancha">Plancha</option>
@@ -57,6 +59,7 @@
     <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript -->
 </body>
 </html>
+
 
 
 
